@@ -1,0 +1,12 @@
+{
+  "settings": {
+    "onlyForOrgMembers": false,
+    "modules": ["danger-plugin-labels", "danger-plugin-flow", "danger-plugin-yarn", "danger-plugin-jest", "danger-plugin-no-test-shortcuts", "danger-plugin-no-console"]
+  },
+  "repos": {
+    "withspectrum/spectrum": {
+      "issue.opened": "withspectrum/spectrum@dangerfile.issues.js#auto-close-dumb-issues",
+      "issue.edited": "withspectrum/spectrum@dangerfile.issues.js#auto-close-dumb-issues"
+    }
+  }
+}
