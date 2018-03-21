@@ -7,7 +7,9 @@
   "repos": {
     "withspectrum/spectrum": {
       "issues.opened": "withspectrum/peril-settings@dangerfile.issues.ts",
-      "issues.edited": "withspectrum/peril-settings@dangerfile.issues.ts"
+      "issues.edited": "withspectrum/peril-settings@dangerfile.issues.ts",
+      "pull_request.opened": "withspectrum/peril-settings@dangerfile.issues.ts",
+      "pull_request.edited": "withspectrum/peril-settings@dangerfile.issues.ts"
     }
   }
 }
