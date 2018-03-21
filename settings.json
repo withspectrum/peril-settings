@@ -6,8 +6,8 @@
   "rules": {},
   "repos": {
     "withspectrum/spectrum": {
-      "issue.created": "withspectrum/spectrum@dangerfile.issues.js#auto-close-dumb-issues",
-      "issue.edited": "withspectrum/spectrum@dangerfile.issues.js#auto-close-dumb-issues"
+      "issues.opened": "withspectrum/spectrum@dangerfile.issues.js#auto-close-dumb-issues",
+      "issues.edited": "withspectrum/spectrum@dangerfile.issues.js#auto-close-dumb-issues"
     }
   }
 }
