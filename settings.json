@@ -6,8 +6,8 @@
   "rules": {},
   "repos": {
     "withspectrum/spectrum": {
-      "issues.opened": "withspectrum/peril-settings@dangerfile.issues.js",
-      "issues.edited": "withspectrum/peril-settings@dangerfile.issues.js"
+      "issues.opened": "withspectrum/peril-settings@dangerfile.issues.ts",
+      "issues.edited": "withspectrum/peril-settings@dangerfile.issues.ts"
     }
   }
 }
