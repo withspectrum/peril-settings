@@ -13,15 +13,19 @@ schedule(
 
 const CHECKBOXES = /^[\t ]*-[\t ]*\[x\][\t ]*(.+?)$/gim
 schedule(async () => {
-  const { body, number } = danger.github.issue;
+  const { body, number, state } = danger.github.issue;
   const { name: repo, owner: { login: owner } } = danger.github.repository;
   const checkedBoxes = body.match(CHECKBOXES);
 
-  await danger.github.api.issues.edit({
-    owner,
-    repo,
-    number,
-    state: !checkedBoxes ? 'closed' : 'open'
-  })
-  fail('This issue does not follow the issue template, please edit it before reopening it.')
+  const newState = checkedBoxes ? 'open' : 'closed';
+
+  if ((state === 'open' || state === 'closed') && newState !== state) {
+    await danger.github.api.issues.edit({
+      owner,
+      repo,
+      number,
+      state: newState
+    })
+    if (newState === 'closed') fail('This issue does not follow the issue template, so it will be closed automatically.')
+  }
 })
