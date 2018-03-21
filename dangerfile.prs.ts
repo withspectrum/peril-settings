@@ -1,12 +1,13 @@
 import { schedule } from 'danger';
 import labels from 'danger-plugin-labels';
 
+// Add automatic labels to the PR
 schedule(
   labels({
     labels: {
-      'bug report': 'Bug',
-      'feature idea': 'Feature',
-      'technical discussion': 'TBD: Tech Debt',
+      wip: 'WIP: Building',
+      'needs testing': 'WIP: Needs Testing',
+      'ready for review': 'WIP: Ready for Review',
     },
   })
 );
