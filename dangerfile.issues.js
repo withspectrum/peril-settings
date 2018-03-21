@@ -11,7 +11,7 @@ schedule(
   })
 );
 
-const CHECKBOXES = /^[\t ]*-[\t ]*\[x\][\t ]*(.+?)$/gim
+var CHECKBOXES = /^[\t ]*-[\t ]*\[x\][\t ]*(.+?)$/gim
 schedule(async function () {
   var { body, number } = danger.github.issue;
   var { repo: name, owner: { owner: login } } = danger.github.repository;
