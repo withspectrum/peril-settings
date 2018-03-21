@@ -12,10 +12,10 @@ schedule(
 );
 
 const CHECKBOXES = /^[\t ]*-[\t ]*\[x\][\t ]*(.+?)$/gim
-schedule(async () => {
-  const { body, number } = danger.github.issue;
-  const { repo: name, owner: { owner: login } } = danger.github.repository;
-  const checkedBoxes = body.match(CHECKBOXES);
+schedule(async function () {
+  var { body, number } = danger.github.issue;
+  var { repo: name, owner: { owner: login } } = danger.github.repository;
+  var checkedBoxes = body.match(CHECKBOXES);
 
   await danger.github.api.issues.edit({
     owner,
