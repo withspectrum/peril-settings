@@ -19,13 +19,13 @@ schedule(async () => {
 
   const newState = checkedBoxes ? 'open' : 'closed';
 
-  if ((state === 'open' || state === 'closed') && newState !== state) {
+  if (state === 'open' && newState !== state) {
     await danger.github.api.issues.edit({
       owner,
       repo,
       number,
       state: newState
     })
-    if (newState === 'closed') fail('This issue does not follow the issue template, so it will be closed automatically.')
+    if (newState === 'closed') fail('This issue does not follow the issue template, so it will be closed automatically. Please open a new one!')
   }
 })
