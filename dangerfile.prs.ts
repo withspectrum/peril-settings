@@ -7,7 +7,7 @@ schedule(
     labels: {
       wip: 'WIP: Building',
       'needs testing': 'WIP: Needs Testing',
-      'ready for review': 'WIP: Ready for Review',
+      'ready for review': 'Ready for Review',
     },
   })
 );
