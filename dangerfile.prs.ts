@@ -11,7 +11,8 @@ schedule(
     }, {
       match: /needs testing/i,
       label: 'WIP: Needs Testing'
-    }, 'Ready for Review']
+    },
+    'Ready for Review']
   })
 );
 
@@ -26,7 +27,7 @@ schedule(
       'flow-typed/**/*.js',
       'public/**/*.js',
       'api/migrations/**/*.js',
-      'cypress/**/*.js',
-    ],
+      'cypress/**/*.js'
+    ]
   })
 );
