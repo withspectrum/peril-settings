@@ -16,18 +16,18 @@ schedule(
   })
 );
 
-// // Make sure all new files are flowtyped
-// schedule(
-//   flow({
-//     // Fail on newly created untyped files
-//     created: 'fail',
-//     // Warn on modified untyped files
-//     modified: 'warn',
-//     blacklist: [
-//       'flow-typed/**/*.js',
-//       'public/**/*.js',
-//       'api/migrations/**/*.js',
-//       'cypress/**/*.js'
-//     ]
-//   })
-// );
+// Make sure all new files are flowtyped
+schedule(
+  flow({
+    // Fail on newly created untyped files
+    created: 'fail',
+    // Warn on modified untyped files
+    modified: 'warn',
+    blacklist: [
+      'flow-typed/**/*.js',
+      'public/**/*.js',
+      'api/migrations/**/*.js',
+      'cypress/**/*.js'
+    ]
+  })
+);
