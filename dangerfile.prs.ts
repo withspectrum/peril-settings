@@ -1,6 +1,6 @@
 import { schedule, danger } from 'danger';
 import labels from 'danger-plugin-labels';
-// import flow from 'danger-plugin-flow';
+import flow from 'danger-plugin-flow';
 
 // Add automatic labels to the PR
 schedule(
@@ -31,3 +31,4 @@ schedule(
     ]
   })
 );
+
