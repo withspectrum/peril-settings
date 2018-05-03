@@ -1,6 +1,8 @@
 import { schedule, danger, fail } from 'danger';
 import labels from 'danger-plugin-labels';
 
+console.log(danger.github)
+
 schedule(
   labels({
     rules: [{
