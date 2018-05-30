@@ -23,10 +23,6 @@ schedule(
         fail('Please direct questions to https://spectrum.chat/spectrum/open, thank you!');
         return false;
       }
-      if (labels.length !== 1) {
-        fail('Please check one label in the issue template.');
-        return false;
-      }
 
       return true;
     }
